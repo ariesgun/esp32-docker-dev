@@ -1,0 +1,9 @@
+services:
+  build-env:
+    image: espressif/idf
+    command: sleep infinity
+    devices:
+      - '/dev:/dev'
+    init: true
+    volumes:
+      - ..:/workspaces
